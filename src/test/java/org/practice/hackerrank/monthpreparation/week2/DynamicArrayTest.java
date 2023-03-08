@@ -54,7 +54,9 @@ class DynamicArrayTest {
         }
         catch(DynamicArrayException ex) {
             assertEquals( ArithmeticException.class, ex.getException().getClass());
+            return;
         }
+        fail();
     }
 
 }
